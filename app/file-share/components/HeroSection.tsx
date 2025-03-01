@@ -3,9 +3,12 @@ import Image from 'next/image'
 
 const techStack = [
   { src: 'homePage/react.svg', alt: 'React' },
+  { src: 'homePage/python.svg', alt: 'Python' },
   { src: 'homePage/django.svg', alt: 'Django' },
   { src: 'homePage/vite.svg', alt: 'Vite' },
   { src: 'homePage/docker.svg', alt: 'Docker' },
+  { src: 'homePage/nginx.svg', alt: 'Nginx' },
+  { src: 'fileShare/terraform.svg', alt: 'Terraform' },
   { src: 'homePage/aws.svg', alt: 'AWS' },
 ]
 

@@ -4,8 +4,9 @@ import reactSvg from '../../public/homePage/react.svg'
 import nodejs from '../../public/homePage/nodejs.svg'
 import python from '../../public/homePage/python.svg'
 import django from '../../public/homePage/django.svg'
-
+import javascript from '../../public/homePage/javascript.svg'
 const techStack = [
+  { src: javascript.src, alt: 'Javascript' },
   { src: reactSvg.src, alt: 'React' },
   { src: nodejs.src, alt: 'Node.js' },
   { src: python.src, alt: 'Python' },

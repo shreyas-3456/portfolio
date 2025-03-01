@@ -49,7 +49,7 @@ const skills = [
     skill: 'AWS',
     icon: '/homePage/aws.svg',
     description:
-      'Deployed scalable apps with S3, EC2, Lambda, and managed CI/CD pipelines.',
+      'Deployed scalable apps with ECR, EC2 and other services and managed CI/CD pipelines.',
   },
   {
     skill: 'MySQL',
@@ -62,6 +62,18 @@ const skills = [
     icon: '/homePage/mongodb.svg',
     description:
       'Designed NoSQL schemas, aggregation pipelines, and efficient indexing.',
+  },
+  {
+    skill: 'Docker',
+    icon: '/homePage/docker.svg',
+    description:
+      'Experienced in writing Dockerfiles, managing multi-container setups with Docker Compose, and optimizing images for performance and security.',
+  },
+  {
+    skill: 'Nginx',
+    icon: '/homePage/nginx.svg',
+    description:
+      'Skilled in configuring Nginx as a reverse proxy, load balancer, and static file server.',
   },
 ]
 
