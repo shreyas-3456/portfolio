@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #101828;
+  cursor: url('https://cdn-icons-png.flaticon.com/32/5300/5300532.png') 16 16,
+    auto;
+}
+p,
+span:not(:has(> img:first-child, > svg:first-child)),
+a,
+label,
+input,
+textarea,
+li,
+h2,
+h1 {
+  cursor: url('https://img.icons8.com/?size=32&id=tKwbdDU5uTVK&format=png') 16
+      16,
+    text;
+}
+a,
+[role='button'] {
+  cursor: url('https://cdn-icons-png.flaticon.com/32/13960/13960992.png') 16 16,
+    pointer;
+}
+
+.rain {
+  position: absolute;
+  top: -20px;
+  width: 2px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  animation: fall linear infinite;
+  overflow: hidden;
+  position: fixed;
+}
+@keyframes fall {
+  to {
+    transform: translateY(3000px);
+  }
+}
