@@ -5,7 +5,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 
 const Dots = () => {
-  const groupRef = useRef(null)
+  const groupRef = useRef<THREE.Points | null>(null)
   const count = 1000 // Number of dots
 
   // Create a circular texture so that the points appear as round dots
@@ -28,14 +28,14 @@ const Dots = () => {
   const positions = useMemo(() => {
     const positions = new Float32Array(count * 3)
     for (let i = 0; i < count; i++) {
-      positions[i * 3] = (Math.random() - 0.5) * 10 // x coordinate
-      positions[i * 3 + 1] = (Math.random() - 0.5) * 10 // y coordinate
-      positions[i * 3 + 2] = (Math.random() - 0.5) * 10 // z coordinate
+      positions[i * 3] = (Math.random() - 0.5) * 10
+      positions[i * 3 + 1] = (Math.random() - 0.5) * 10
+      positions[i * 3 + 2] = (Math.random() - 0.5) * 10
     }
     return positions
   }, [count])
 
-  // Rotate the dots group continuously for a dynamic backdrop effect
+  // Rotate the dots
   useFrame((state, delta) => {
     if (groupRef.current) {
       groupRef.current.rotation.y += delta * 0.1 // Slow rotation on Y axis
@@ -54,9 +54,9 @@ const Dots = () => {
         />
       </bufferGeometry>
       <pointsMaterial
-        map={circleTexture} // Use the circular texture
-        alphaTest={0.5} // Makes the edges smooth by discarding pixels below the threshold\n        color="white"
-        size={0.009} // Small dots
+        map={circleTexture}
+        alphaTest={0.5}
+        size={0.009}
         sizeAttenuation={true}
         transparent={true}
         opacity={0.8}
