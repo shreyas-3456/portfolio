@@ -16,14 +16,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Shreyas Nigam - Full Stack Developer',
   description:
-    'Welcome to my portfolio! I am a passionate frontend developer specializing in creating beautiful, responsive, and user-centric web applications. With expertise in modern JavaScript frameworks and UI/UX principles, I transform designs into seamless interactive experiences.',
+    'Portfolio of Shreyas Nigam, an AWS Certified full-stack developer with 3 years of frontend and backend experience across React, Java, Spring Boot, AWS, and cloud infrastructure.',
   keywords: [
     'Frontend Developer',
+    'Backend Developer',
+    'Full Stack Developer',
     'Web Developer',
     'React Developer',
     'Next.js',
     'TypeScript',
     'JavaScript',
+    'Java',
+    'Kotlin',
+    'Spring Boot',
+    'Kafka',
+    'Prometheus',
+    'AWS Certified Developer Associate',
+    'Terraform',
+    'CloudFormation',
     'Python',
     'Responsive Design',
     'Web Animation',
@@ -37,10 +47,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Shreyas Nigam' }],
   creator: 'Shreyas Nigam',
   openGraph: {
-    title: 'Shreyas Nigam - Frontend Developer Portfolio',
+    title: 'Shreyas Nigam - Full Stack Developer Portfolio',
     description:
-      'Passionate frontend developer crafting beautiful and interactive web experiences. Explore my projects and frontend development expertise.',
-    url: 'https://your-domain.com',
+      'AWS Certified full-stack developer with 3 years of frontend and backend experience. Explore React, Java, Spring Boot, AWS, and cloud infrastructure projects.',
     siteName: 'Shreyas Nigam - Portfolio',
     images: [
       {

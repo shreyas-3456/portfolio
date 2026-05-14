@@ -1,0 +1,41 @@
+<svg viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">CloudFormation Terraform Builder</title>
+  <desc id="desc">Cloud infrastructure builder interface with Terraform, AWS, and Spring services.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0f172a"/>
+      <stop offset=".48" stop-color="#164e63"/>
+      <stop offset="1" stop-color="#422006"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <circle cx="132" cy="88" r="90" fill="#38bdf8" opacity=".12"/>
+  <circle cx="826" cy="452" r="128" fill="#f97316" opacity=".14"/>
+  <rect x="96" y="72" width="768" height="396" rx="28" fill="url(#panel)" stroke="#334155" stroke-width="2"/>
+  <rect x="96" y="72" width="768" height="58" rx="28" fill="#1e293b"/>
+  <circle cx="136" cy="101" r="8" fill="#f87171"/>
+  <circle cx="164" cy="101" r="8" fill="#facc15"/>
+  <circle cx="192" cy="101" r="8" fill="#4ade80"/>
+  <text x="232" y="107" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">CloudFormation Terraform Builder</text>
+  <rect x="138" y="168" width="270" height="236" rx="18" fill="#0f172a" stroke="#1f2937"/>
+  <text x="164" y="206" fill="#93c5fd" font-family="monospace" font-size="20">provider "aws" {</text>
+  <text x="188" y="240" fill="#e5e7eb" font-family="monospace" font-size="18">region = "us-east-1"</text>
+  <text x="164" y="274" fill="#93c5fd" font-family="monospace" font-size="20">}</text>
+  <text x="164" y="320" fill="#c4b5fd" font-family="monospace" font-size="20">resource "vpc" {</text>
+  <text x="188" y="354" fill="#e5e7eb" font-family="monospace" font-size="18">cidr = "10.0.0.0/16"</text>
+  <text x="164" y="388" fill="#c4b5fd" font-family="monospace" font-size="20">}</text>
+  <path d="M552 204c19-47 88-39 97 12 39 1 70 29 70 65 0 37-34 66-76 66H522c-43 0-78-31-78-69 0-36 32-66 73-69 8-3 19-5 35-5Z" fill="#e0f2fe" opacity=".96"/>
+  <path d="M563 238h80v74h-80z" fill="#f59e0b"/>
+  <path d="M579 254h48v42h-48z" fill="#0f172a" opacity=".85"/>
+  <path d="M472 373h236" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 16"/>
+  <rect x="474" y="404" width="96" height="36" rx="18" fill="#813cf3"/>
+  <text x="494" y="428" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700">Terraform</text>
+  <rect x="590" y="404" width="74" height="36" rx="18" fill="#f97316"/>
+  <text x="610" y="428" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700">AWS</text>
+  <rect x="684" y="404" width="96" height="36" rx="18" fill="#6db33f"/>
+  <text x="708" y="428" fill="#052e16" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800">Spring</text>
+</svg>

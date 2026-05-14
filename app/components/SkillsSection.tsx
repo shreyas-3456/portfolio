@@ -29,6 +29,18 @@ const skills = [
       'Ensured type safety and scalability in large React & Node.js projects.',
   },
   {
+    skill: 'Java',
+    icon: '/homePage/java.svg',
+    description:
+      'Built backend services and cloud automation workflows with Java.',
+  },
+  {
+    skill: 'Kotlin',
+    icon: '/homePage/kotlin.svg',
+    description:
+      'Developed concise JVM backend code with Kotlin and modern service patterns.',
+  },
+  {
     skill: 'NodeJs',
     icon: '/homePage/nodejs.svg',
     description:
@@ -44,6 +56,12 @@ const skills = [
     icon: '/homePage/django.svg',
     description:
       'Designed secure, high-performance web apps with Django ORM & DRF.',
+  },
+  {
+    skill: 'Spring Boot',
+    icon: '/homePage/spring-boot.svg',
+    description:
+      'Created production-ready REST APIs and backend services with Spring Boot.',
   },
   {
     skill: 'AWS',
@@ -68,6 +86,18 @@ const skills = [
     icon: '/homePage/docker.svg',
     description:
       'Experienced in writing Dockerfiles, managing multi-container setups with Docker Compose, and optimizing images for performance and security.',
+  },
+  {
+    skill: 'Kafka',
+    icon: '/homePage/kafka.svg',
+    description:
+      'Built event-driven flows with Kafka topics, producers, and consumers.',
+  },
+  {
+    skill: 'Prometheus',
+    icon: '/homePage/prometheus.svg',
+    description:
+      'Added service metrics and observability using Prometheus-compatible monitoring.',
   },
   {
     skill: 'Nginx',

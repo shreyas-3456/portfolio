@@ -32,6 +32,15 @@ const projects = [
     website: 'https://chat-app-latest-6aeg.onrender.com',
     github: 'https://github.com/shreyas-3456/chat-app',
   },
+  {
+    title: 'CloudFormation Terraform Builder',
+    description:
+      'A cloud infrastructure builder for generating Terraform and CloudFormation workflows.',
+    image: '/cloud-builder.svg',
+    tags: ['React', 'Java', 'Spring Boot', 'Terraform', 'CloudFormation'],
+    website: 'https://awsbuilder.netlify.app/',
+    github: 'https://github.com/shreyas-3456/awsBuilder',
+  },
 ]
 
 export default function ProjectsSection() {
@@ -52,19 +61,21 @@ export default function ProjectsSection() {
         {/* Flex container with wrapping */}
         <div className='project-container flex flex-wrap -mx-2'>
           {projects.map((project, index) => (
-            <div key={index} className='w-1/2 px-2 mb-4'>
+            <div key={index} className='w-full sm:w-1/2 px-2 mb-4'>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                role='button'
+                role={project.link ? 'button' : undefined}
                 onClick={() => {
                   if (project.link) {
                     router.push(project.link)
                   }
                 }}
-                className='group relative bg-gray-900/50 rounded-xl overflow-hidden backdrop-blur-sm border border-gray-800 cursor-pointer'
+                className={`group relative bg-gray-900/50 rounded-xl overflow-hidden backdrop-blur-sm border border-gray-800 ${
+                  project.link ? 'cursor-pointer' : ''
+                }`}
               >
                 <div className='aspect-video relative overflow-hidden'>
                   <Image
@@ -98,15 +109,17 @@ export default function ProjectsSection() {
                     >
                       Website
                     </a>
-                    <a
-                      href={project.github}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      onClick={(e) => e.stopPropagation()}
-                      className='px-4 py-2 bg-gray-700 text-white rounded-lg text-sm font-medium hover:bg-gray-600 transition-all'
-                    >
-                      GitHub
-                    </a>
+                    {project.github ? (
+                      <a
+                        href={project.github}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        onClick={(e) => e.stopPropagation()}
+                        className='px-4 py-2 bg-gray-700 text-white rounded-lg text-sm font-medium hover:bg-gray-600 transition-all'
+                      >
+                        GitHub
+                      </a>
+                    ) : null}
                   </div>
                 </div>
               </motion.div>

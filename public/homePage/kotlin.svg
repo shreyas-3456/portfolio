@@ -1,0 +1,13 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Kotlin</title>
+  <defs>
+    <linearGradient id="kotlinGradient" x1="7" y1="57" x2="57" y2="7" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0095d5"/>
+      <stop offset=".5" stop-color="#7f52ff"/>
+      <stop offset="1" stop-color="#ff6b00"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#111827"/>
+  <path d="M14 14h36L32 32l18 18H14V14Z" fill="url(#kotlinGradient)"/>
+  <path d="M14 50 32 32 14 14v36Z" fill="#06b6d4" opacity=".7"/>
+</svg>

@@ -74,7 +74,7 @@ export default function ContactSection() {
                 Get in Touch
               </motion.a>
               <motion.a
-                href='https://drive.google.com/file/d/1-vcy0N6l-iJLTgChwrAonD1tIuPmz5jp/view?usp=sharing'
+                href='https://drive.google.com/file/d/1gyl0JW4SpssiRLxT3OMO0mCSD-cOxIU0/view?usp=drive_link'
                 target='_blank'
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

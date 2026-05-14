@@ -1,0 +1,9 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Prometheus</title>
+  <rect width="64" height="64" rx="14" fill="#fff7ed"/>
+  <circle cx="32" cy="34" r="19" fill="#e6522c"/>
+  <path d="M32 13c3 5.5 2.1 9.3-.8 12.8-2.3-3.5-1.9-7.5.8-12.8Z" fill="#fff7ed"/>
+  <path d="M43.2 20.7c-.3 6.1-2.7 10.1-7.5 12.2 0-4.7 2.1-8.4 7.5-12.2ZM20.8 20.7c5.4 3.8 7.5 7.5 7.5 12.2-4.8-2.1-7.2-6.1-7.5-12.2Z" fill="#fff7ed"/>
+  <path d="M22 38.5h20a10.2 10.2 0 0 1-20 0Z" fill="#fff7ed"/>
+  <path d="M27 47h10v5H27z" fill="#e6522c"/>
+</svg>
