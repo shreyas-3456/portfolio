@@ -11,8 +11,10 @@ const projects = [
     image: '/fileShare.svg',
     tags: ['React', 'Python', 'Django', 'AWS', 'Nginx', 'Docker'],
     link: '/file-share',
-    website: 'https://shreyas-fileshare.netlify.app/',
-    github: 'https://github.com/shreyas-3456/fileshare',
+    actions: [
+      { label: 'Website', href: 'https://shreyas-fileshare.netlify.app/' },
+      { label: 'GitHub', href: 'https://github.com/shreyas-3456/fileshare' },
+    ],
   },
   {
     title: 'GitHub User Search App',
@@ -20,8 +22,16 @@ const projects = [
     image: '/github.svg',
     tags: ['React', 'GitHub', 'Auth0', 'FusionCharts'],
     link: '/search-github-users',
-    website: 'https://react-search-github-users-project.netlify.app/',
-    github: 'https://github.com/shreyas-3456/react-search-github-users',
+    actions: [
+      {
+        label: 'Website',
+        href: 'https://react-search-github-users-project.netlify.app/',
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/shreyas-3456/react-search-github-users',
+      },
+    ],
   },
   {
     title: 'Chat App',
@@ -29,8 +39,10 @@ const projects = [
     image: '/chat.svg',
     tags: ['Javascript', 'Nodejs', 'ExpressJs', 'Socket.io'],
     link: '/chat-app',
-    website: 'https://chat-app-latest-6aeg.onrender.com',
-    github: 'https://github.com/shreyas-3456/chat-app',
+    actions: [
+      { label: 'Website', href: 'https://chat-app-latest-6aeg.onrender.com' },
+      { label: 'GitHub', href: 'https://github.com/shreyas-3456/chat-app' },
+    ],
   },
   {
     title: 'CloudFormation Terraform Builder',
@@ -38,8 +50,29 @@ const projects = [
       'A cloud infrastructure builder for generating Terraform and CloudFormation workflows.',
     image: '/cloud-builder.svg',
     tags: ['React', 'Java', 'Spring Boot', 'Terraform', 'CloudFormation'],
-    website: 'https://awsbuilder.netlify.app/',
-    github: 'https://github.com/shreyas-3456/awsBuilder',
+    link: '/aws-builder',
+    actions: [
+      { label: 'Website', href: 'https://awsbuilder.netlify.app/' },
+      { label: 'GitHub', href: 'https://github.com/shreyas-3456/awsBuilder' },
+    ],
+  },
+  {
+    title: 'Connect Hub',
+    description:
+      'A QR-paired Android and desktop file transfer system with real-time signaling.',
+    image: '/connect-hub.svg',
+    tags: ['Kotlin', 'Jetpack Compose', 'Java', 'Spring Boot', 'WebSocket'],
+    link: '/connect-hub',
+    actions: [
+      {
+        label: 'Client',
+        href: 'https://github.com/shreyas-3456/connect-hub-client',
+      },
+      {
+        label: 'Backend',
+        href: 'https://github.com/shreyas-3456/connet-hub',
+      },
+    ],
   },
 ]
 
@@ -100,26 +133,22 @@ export default function ProjectsSection() {
                     ))}
                   </div>
                   <div className='flex gap-4'>
-                    <a
-                      href={project.website}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      onClick={(e) => e.stopPropagation()}
-                      className='px-4 py-2 bg-blue-500 text-white rounded-lg text-sm font-medium hover:bg-blue-600 transition-all'
-                    >
-                      Website
-                    </a>
-                    {project.github ? (
+                    {project.actions.map((action, actionIndex) => (
                       <a
-                        href={project.github}
+                        key={action.href}
+                        href={action.href}
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}
-                        className='px-4 py-2 bg-gray-700 text-white rounded-lg text-sm font-medium hover:bg-gray-600 transition-all'
+                        className={`px-4 py-2 text-white rounded-lg text-sm font-medium transition-all ${
+                          actionIndex === 0
+                            ? 'bg-blue-500 hover:bg-blue-600'
+                            : 'bg-gray-700 hover:bg-gray-600'
+                        }`}
                       >
-                        GitHub
+                        {action.label}
                       </a>
-                    ) : null}
+                    ))}
                   </div>
                 </div>
               </motion.div>
