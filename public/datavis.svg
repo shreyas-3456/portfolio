@@ -1,0 +1,131 @@
+<svg viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">DataVis Platform</title>
+  <desc id="desc">Decoupled data exploration, parsing, OLAP analytics and interactive visualization platform.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#090d16"/>
+      <stop offset="0.5" stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0f172a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="chartPurple" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#a855f7"/>
+      <stop offset="1" stop-color="#701a75"/>
+    </linearGradient>
+    <linearGradient id="chartCyan" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#0891b2" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#a855f7"/>
+      <stop offset="0.5" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#334155" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  {/* Background */}
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect width="960" height="540" fill="url(#grid)"/>
+
+  {/* Glowing Orbs */}
+  <circle cx="160" cy="120" r="140" fill="#a855f7" opacity="0.15" filter="blur(40px)"/>
+  <circle cx="800" cy="400" r="160" fill="#06b6d4" opacity="0.12" filter="blur(50px)"/>
+
+  {/* Browser Mockup */}
+  <rect x="80" y="60" width="800" height="420" rx="24" fill="url(#panel)" stroke="#334155" stroke-width="1.5"/>
+  
+  {/* Browser Header */}
+  <rect x="80" y="60" width="800" height="54" rx="24" fill="#1e293b" opacity="0.8"/>
+  <rect x="80" y="90" width="800" height="24" fill="#1e293b" opacity="0.8"/> {/* cover bottom corners */}
+  
+  {/* Dots */}
+  <circle cx="120" cy="87" r="7" fill="#ef4444"/>
+  <circle cx="144" cy="87" r="7" fill="#f59e0b"/>
+  <circle cx="168" cy="87" r="7" fill="#10b981"/>
+  
+  {/* Title text */}
+  <text x="210" y="94" fill="#cbd5e1" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" letter-spacing="0.5">DataVis Platform 📊</text>
+
+  {/* Left Panel - File Upload/Source Mockup */}
+  <rect x="120" y="148" width="220" height="294" rx="16" fill="#0b0f19" stroke="#334155" stroke-width="1"/>
+  
+  {/* Source Indicators */}
+  <text x="142" y="188" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1">DATA SOURCE</text>
+  
+  <g transform="translate(142, 210)">
+    {/* CSV File item */}
+    <rect width="176" height="48" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+    <rect x="14" y="14" width="20" height="20" rx="4" fill="#4f46e5"/>
+    <text x="18" y="28" fill="#fff" font-family="monospace" font-size="12" font-weight="800">CSV</text>
+    <text x="46" y="28" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">sales_data.csv</text>
+    <text x="46" y="38" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">4.2 MB • Ready</text>
+  </g>
+
+  <g transform="translate(142, 274)">
+    {/* Excel File item */}
+    <rect width="176" height="48" rx="8" fill="#022c22" stroke="#10b981" stroke-width="0.5" opacity="0.6"/>
+    <rect x="14" y="14" width="20" height="20" rx="4" fill="#059669"/>
+    <text x="18" y="28" fill="#fff" font-family="monospace" font-size="12" font-weight="800">XLS</text>
+    <text x="46" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">marketing.xlsx</text>
+    <text x="46" y="38" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">8.9 MB • Pending</text>
+  </g>
+
+  {/* Engine status indicator */}
+  <g transform="translate(142, 345)">
+    <rect width="176" height="74" rx="8" fill="#1e293b" opacity="0.6"/>
+    <text x="14" y="24" fill="#a855f7" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DOUBLE ENGINE</text>
+    
+    <circle cx="22" cy="48" r="6" fill="#10b981"/>
+    <text x="36" y="52" fill="#cbd5e1" font-family="monospace" font-size="12" font-weight="600">DuckDB + Postgres</text>
+  </g>
+
+  {/* Right Panel - Interactive Dashboard Charts */}
+  <rect x="370" y="148" width="470" height="294" rx="16" fill="#0b0f19" stroke="#334155" stroke-width="1"/>
+  
+  {/* Chart Toolbar */}
+  <text x="394" y="184" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Vectorized Analytics</text>
+  <rect x="734" y="166" width="82" height="24" rx="12" fill="#3b82f6" opacity="0.2"/>
+  <rect x="734" y="166" width="82" height="24" rx="12" fill="none" stroke="#3b82f6" stroke-width="1"/>
+  <text x="746" y="182" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="11" font-weight="700">FAST SQL</text>
+
+  {/* Bars Chart */}
+  <g transform="translate(394, 220)">
+    {/* Grid Lines */}
+    <line x1="0" y1="0" x2="420" y2="0" stroke="#334155" stroke-dasharray="4" opacity="0.5"/>
+    <line x1="0" y1="50" x2="420" y2="50" stroke="#334155" stroke-dasharray="4" opacity="0.5"/>
+    <line x1="0" y1="100" x2="420" y2="100" stroke="#334155" stroke-dasharray="4" opacity="0.5"/>
+    <line x1="0" y1="150" x2="420" y2="150" stroke="#334155" opacity="0.8"/>
+    
+    {/* Bar 1 */}
+    <rect x="30" y="40" width="30" height="110" rx="4" fill="url(#chartPurple)"/>
+    {/* Bar 2 */}
+    <rect x="90" y="80" width="30" height="70" rx="4" fill="url(#chartPurple)"/>
+    {/* Bar 3 */}
+    <rect x="150" y="20" width="30" height="130" rx="4" fill="url(#chartPurple)"/>
+    {/* Bar 4 */}
+    <rect x="210" y="60" width="30" height="90" rx="4" fill="url(#chartPurple)"/>
+
+    {/* Line graph overlay */}
+    <path d="M 45 60 L 105 100 L 165 40 L 225 85 L 285 25 L 345 70 L 405 15" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 45 60 L 105 100 L 165 40 L 225 85 L 285 25 L 345 70 L 405 15 L 405 150 L 45 150 Z" fill="url(#chartCyan)" opacity="0.4"/>
+    
+    {/* Glowing points */}
+    <circle cx="165" cy="40" r="5" fill="#fff" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="285" cy="25" r="5" fill="#fff" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="405" cy="15" r="5" fill="#fff" stroke="#22d3ee" stroke-width="2"/>
+  </g>
+
+  {/* Query execution badge */}
+  <g transform="translate(620, 396)">
+    <rect width="200" height="30" rx="15" fill="#10b981" opacity="0.15"/>
+    <rect width="200" height="30" rx="15" fill="none" stroke="#10b981" stroke-width="1"/>
+    <circle cx="18" cy="15" r="5" fill="#10b981"/>
+    <text x="32" y="20" fill="#34d399" font-family="monospace" font-size="11" font-weight="700">Query Time: 12ms (DuckDB)</text>
+  </g>
+</svg>

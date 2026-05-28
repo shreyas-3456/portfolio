@@ -5,6 +5,30 @@ import { useRouter } from 'next/navigation'
 
 const projects = [
   {
+    title: 'DataVis Platform',
+    description:
+      'A high-performance web platform built for dynamic data exploration, Celery-backed parsing, and vectorized OLAP analytics via DuckDB.',
+    image: '/datavis.svg',
+    tags: ['FastAPI', 'Next.js', 'D3.js', 'PostgreSQL', 'DuckDB', 'Celery', 'Redis', 'AWS S3'],
+    link: '/datavis',
+    actions: [
+      { label: 'Website', href: 'https://data-vis-shreyas.netlify.app/' },
+      { label: 'GitHub', href: 'https://github.com/shreyas-3456/datavis' },
+    ],
+  },
+  {
+    title: 'CloudFormation Terraform Builder',
+    description:
+      'A cloud infrastructure builder for generating Terraform and CloudFormation workflows.',
+    image: '/cloud-builder.svg',
+    tags: ['React', 'Java', 'Spring Boot', 'Terraform', 'CloudFormation'],
+    link: '/aws-builder',
+    actions: [
+      { label: 'Website', href: 'https://awsbuilder.netlify.app/' },
+      { label: 'GitHub', href: 'https://github.com/shreyas-3456/awsBuilder' },
+    ],
+  },
+  {
     title: 'File Sharing App',
     description:
       'An end-to-end file sharing platform where only you know the key.',
@@ -42,18 +66,6 @@ const projects = [
     actions: [
       { label: 'Website', href: 'https://chat-app-latest-6aeg.onrender.com' },
       { label: 'GitHub', href: 'https://github.com/shreyas-3456/chat-app' },
-    ],
-  },
-  {
-    title: 'CloudFormation Terraform Builder',
-    description:
-      'A cloud infrastructure builder for generating Terraform and CloudFormation workflows.',
-    image: '/cloud-builder.svg',
-    tags: ['React', 'Java', 'Spring Boot', 'Terraform', 'CloudFormation'],
-    link: '/aws-builder',
-    actions: [
-      { label: 'Website', href: 'https://awsbuilder.netlify.app/' },
-      { label: 'GitHub', href: 'https://github.com/shreyas-3456/awsBuilder' },
     ],
   },
   {
