@@ -26,6 +26,11 @@ a,
     pointer;
 }
 
+a span {
+   cursor: url('https://cdn-icons-png.flaticon.com/32/13960/13960992.png') 16 16 ,
+    pointer !important;
+}
+
 .rain {
   position: absolute;
   top: -20px;
